@@ -15,12 +15,15 @@ digimons_caract("Botamon","Bebe I","Baba", "Datos\nLibre\nNinguno","Cazadores de
 digimons_caract("Koromon","Bebe II","Menor","Datos\nLibre\nNinguno","Cazadores de Virus")
 digimons_caract("Agumon","Infantil","Reptil","Vacuna","Espíritus de la Naturaleza\nCazadores de Virus\nImperio del Metal")
 """
+# Constantes
+CAZADORES_DE_VIRUS = "Cazadores de Virus"
+
 """botamon = {
     "nombre": "Botamon",
     "nivel": "Bebé I",
     "tipo": "Baba",
     "atributo": "Datos",
-    "familia": ["Cazadores de Virus", "Espíritus de la Naturaleza"]
+    "familia": [CAZADORES_DE_VIRUS, "Espíritus de la Naturaleza"]
 }
 
 koromon={
@@ -74,17 +77,17 @@ class Digimon:
         for e in self.evoluciones:
             print("-", e.nombre, sep="")
 
-botamon = Digimon("Botamon", "Bebé I", "Baba", "Datos", ["Cazadores de Virus"])
+botamon = Digimon("Botamon", "Bebé I", "Baba", "Datos", [CAZADORES_DE_VIRUS])
 botamon.mostrar()
-koromon = Digimon("Koromon", "Bebé II", "Menor", "Datos", ["Cazadores de Virus"])
+koromon = Digimon("Koromon", "Bebé II", "Menor", "Datos", [CAZADORES_DE_VIRUS])
 koromon.mostrar()
-agumon = Digimon("Agumon", "Infantil", "Reptil", "Vacuna", ["Espíritus de la Naturaleza", "Cazadores de Virus", "Imperio del Metal"])
+agumon = Digimon("Agumon", "Infantil", "Reptil", "Vacuna", ["Espíritus de la Naturaleza", CAZADORES_DE_VIRUS, "Imperio del Metal"])
 agumon.mostrar()
-greymon = Digimon("Greymon", "Adulto", "Dinosaurio", "Vacuna", ["Espíritus de la Naturaleza","Guardián de las Profundidades","Rugido de Dragón","Cazadores de Virus", "Imperio del Metal","Soldados de Pesadilla"])
+greymon = Digimon("Greymon", "Adulto", "Dinosaurio", "Vacuna", ["Espíritus de la Naturaleza","Guardián de las Profundidades","Rugido de Dragón",CAZADORES_DE_VIRUS, "Imperio del Metal","Soldados de Pesadilla"])
 greymon.mostrar()
-metalgreymon = Digimon("MetalGreymon", "Perfecto", "Cyborg", "Vacuna", ["Espíritus de la Naturaleza","Guardián de las Profundidades","Rugido de Dragón","Cazadores de Virus", "Imperio del Metal","Soldados de Pesadilla"])
+metalgreymon = Digimon("MetalGreymon", "Perfecto", "Cyborg", "Vacuna", ["Espíritus de la Naturaleza","Guardián de las Profundidades","Rugido de Dragón",CAZADORES_DE_VIRUS, "Imperio del Metal","Soldados de Pesadilla"])
 metalgreymon.mostrar()
-aero_v_dramon = Digimon("AeroV-dramon", "Perfecto", "Dragón Volador", "Vacuna", ["Espíritus de la Naturaleza","Guardián de las Profundidades","Rugido de Dragón","Cazadores de Virus", "Imperio del Metal","Soldados de Pesadilla"])
+aero_v_dramon = Digimon("AeroV-dramon", "Perfecto", "Dragón Volador", "Vacuna", ["Espíritus de la Naturaleza","Guardián de las Profundidades","Rugido de Dragón",CAZADORES_DE_VIRUS, "Imperio del Metal","Soldados de Pesadilla"])
 aero_v_dramon.mostrar()
 
 botamon.agregar_evolucion(koromon)
