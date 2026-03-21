@@ -1,0 +1,52 @@
+[
+{
+    "nombre": "Botamon",
+    "nivel": "Bebé I",
+    "tipo": "Baba",
+    "atributo": "Datos",
+    "familia": ["Cazadores de Virus", "Espíritus de la Naturaleza"],
+    "evoluciones": ["Koromon", "Black Agumon","Airdramon","Budmon","Candmon","Pagumon","Pinamon",
+"Tokomon","Wanyamon",
+{"nombre":"Lady Devimon","tipo_Evolucion":"Warp Evolution"},
+{"nombre": "Sakuyamon", "tipo_Evolucion": "Warp Evolution"},
+{"nombre":"Z'd Garurumon","tipo_Evolucion":"Warp Evolution"},
+{"nombre":"Lopmon","tipo_Evolucion":"Joggres Evolution"}
+]
+},
+{
+    "nombre": "Koromon",
+    "nivel": "Bebé II",
+    "tipo": "Baba",
+    "atributo": "Datos",
+    "familia": ["Cazadores de Virus", "Espíritus de la Naturaleza"]
+},
+{
+    "nombre": "Agumon",
+    "nivel": "Infantil",
+    "tipo": "Reptil",
+    "atributo": "Datos",
+    "familia": ["Cazadores de Virus", "Espíritus de la Naturaleza"]
+},
+{
+    "nombre": "Greymon",
+    "nivel": "Adulto",
+    "tipo": "Dinosaurio",
+    "atributo": "Datos",
+    "familia": ["Cazadores de Virus", "Espíritus de la Naturaleza"]
+},
+{
+    "nombre": "MetalGreymon",
+    "nivel": "Perfecto",
+    "tipo": "Cyborg",
+    "atributo": "Datos",
+    "familia": ["Cazadores de Virus", "Espíritus de la Naturaleza"]
+},
+{
+    "nombre": "AeroV-dramon",
+    "nivel": "Perfecto",
+    "tipo": "Dragón Volador",
+    "atributo": "Datos",
+    "familia": ["Cazadores de Virus", "Espíritus de la Naturaleza"]
+
+}
+]
