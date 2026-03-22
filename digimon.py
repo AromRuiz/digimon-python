@@ -1,6 +1,3 @@
-# Constantes
-CAZADORES_DE_VIRUS = "Cazadores de Virus"
-"""
 class Digimon:
     def __init__(self, nombre, nivel, tipo, atributo, familia):
         self.nombre = nombre
@@ -9,6 +6,7 @@ class Digimon:
         self.atributo = atributo
         self.familia = familia
         self.evoluciones= []
+
     def agregar_evolucion(self, digimon):
         self.evoluciones.append(digimon)
 
@@ -24,26 +22,32 @@ class Digimon:
         for e in self.evoluciones:
             print("-", e.nombre, sep="")
 
-botamon = Digimon("Botamon", "Bebé I", "Baba", "Datos", [CAZADORES_DE_VIRUS])
-botamon.mostrar()
-koromon = Digimon("Koromon", "Bebé II", "Menor", "Datos", [CAZADORES_DE_VIRUS])
-koromon.mostrar()
-agumon = Digimon("Agumon", "Infantil", "Reptil", "Vacuna", ["Espíritus de la Naturaleza", CAZADORES_DE_VIRUS, "Imperio del Metal"])
-agumon.mostrar()
-greymon = Digimon("Greymon", "Adulto", "Dinosaurio", "Vacuna", ["Espíritus de la Naturaleza","Guardián de las Profundidades","Rugido de Dragón",CAZADORES_DE_VIRUS, "Imperio del Metal","Soldados de Pesadilla"])
-greymon.mostrar()
-metalgreymon = Digimon("MetalGreymon", "Perfecto", "Cyborg", "Vacuna", ["Espíritus de la Naturaleza","Guardián de las Profundidades","Rugido de Dragón",CAZADORES_DE_VIRUS, "Imperio del Metal","Soldados de Pesadilla"])
-metalgreymon.mostrar()
-aero_v_dramon = Digimon("AeroV-dramon", "Perfecto", "Dragón Volador", "Vacuna", ["Espíritus de la Naturaleza","Guardián de las Profundidades","Rugido de Dragón",CAZADORES_DE_VIRUS, "Imperio del Metal","Soldados de Pesadilla"])
-aero_v_dramon.mostrar()
-
-botamon.agregar_evolucion(koromon)
-koromon.agregar_evolucion(agumon)
-agumon.agregar_evolucion(greymon)
-greymon.agregar_evolucion(metalgreymon)
-greymon.agregar_evolucion(aero_v_dramon)
-"""
 import json
 with open("digimon.JSON", "r",encoding="utf-8") as f:
     digimons_data = json.load(f)
-print(digimons_data)
+"""print(json.dumps(digimons_data, indent=2))"""
+digimons = {}
+
+for d in digimons_data:
+    digimons[d["nombre"]] = Digimon(
+        d["nombre"],
+        d["nivel"],
+        d["tipo"],
+        d["atributo"],
+        d["familia"]
+    )
+for d in digimons_data:
+    for evo in d.get("evoluciones", []):
+        nombre_evo = evo["nombre"]
+        tipo_evo = evo.get("tipo_evolucion")
+        req_evo = evo.get("requisitos")
+        if nombre_evo in digimons:
+            digimons[d["nombre"]].agregar_evolucion(digimons[nombre_evo])
+
+"""digimons["Botamon"].mostrar()"""
+for digimon in digimons.values():
+    digimon.mostrar()
+    print(".........")
+#for digimon in digimons.values():
+#    if digimon.nivel == "Infantil":
+#        digimon.mostrar()

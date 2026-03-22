@@ -5,12 +5,14 @@
     "tipo": "Baba",
     "atributo": "Datos",
     "familia": ["Cazadores de Virus", "Espíritus de la Naturaleza"],
-    "evoluciones": ["Koromon", "Black Agumon","Airdramon","Budmon","Candmon","Pagumon","Pinamon",
-"Tokomon","Wanyamon",
-{"nombre":"Lady Devimon","tipo_Evolucion":"Warp Evolution"},
-{"nombre": "Sakuyamon", "tipo_Evolucion": "Warp Evolution"},
-{"nombre":"Z'd Garurumon","tipo_Evolucion":"Warp Evolution"},
-{"nombre":"Lopmon","tipo_Evolucion":"Joggres Evolution"}
+    "evoluciones": [{"nombre": "Koromon"}, {"nombre": "Black Agumon"},
+    {"nombre": "Airdramon"}, {"nombre": "Budmon"}, {"nombre": "Candmon"}, 
+    {"nombre": "Pagumon"}, {"nombre": "Pinamon"}, {"nombre": "Tokomon"}, 
+    {"nombre": "Wanyamon"},
+    {"nombre":"Lady Devimon","tipo_evolucion":"Warp Evolution"},
+    {"nombre": "Sakuyamon", "tipo_evolucion": "Warp Evolution"},
+    {"nombre":"Z'd Garurumon","tipo_evolucion":"Warp Evolution"},
+    {"nombre":"Lopmon","tipo_evolucion":"Joggres Evolution", "requisitos":"Moonmon"}
 ]
 },
 {
@@ -18,7 +20,8 @@
     "nivel": "Bebé II",
     "tipo": "Baba",
     "atributo": "Datos",
-    "familia": ["Cazadores de Virus", "Espíritus de la Naturaleza"]
+    "familia": ["Cazadores de Virus", "Espíritus de la Naturaleza"],
+    "evoluciones": [{"nombre": "Agumon"}]
 },
 {
     "nombre": "Agumon",

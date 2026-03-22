@@ -52,3 +52,23 @@ digimons_caract(botamon)
 digimons_caract(koromon)
 digimons_caract(agumon)"""
 
+"""
+botamon = Digimon("Botamon", "Bebé I", "Baba", "Datos", [CAZADORES_DE_VIRUS])
+botamon.mostrar()
+koromon = Digimon("Koromon", "Bebé II", "Menor", "Datos", [CAZADORES_DE_VIRUS])
+koromon.mostrar()
+agumon = Digimon("Agumon", "Infantil", "Reptil", "Vacuna", ["Espíritus de la Naturaleza", CAZADORES_DE_VIRUS, "Imperio del Metal"])
+agumon.mostrar()
+greymon = Digimon("Greymon", "Adulto", "Dinosaurio", "Vacuna", ["Espíritus de la Naturaleza","Guardián de las Profundidades","Rugido de Dragón",CAZADORES_DE_VIRUS, "Imperio del Metal","Soldados de Pesadilla"])
+greymon.mostrar()
+metalgreymon = Digimon("MetalGreymon", "Perfecto", "Cyborg", "Vacuna", ["Espíritus de la Naturaleza","Guardián de las Profundidades","Rugido de Dragón",CAZADORES_DE_VIRUS, "Imperio del Metal","Soldados de Pesadilla"])
+metalgreymon.mostrar()
+aero_v_dramon = Digimon("AeroV-dramon", "Perfecto", "Dragón Volador", "Vacuna", ["Espíritus de la Naturaleza","Guardián de las Profundidades","Rugido de Dragón",CAZADORES_DE_VIRUS, "Imperio del Metal","Soldados de Pesadilla"])
+aero_v_dramon.mostrar()
+
+botamon.agregar_evolucion(koromon)
+koromon.agregar_evolucion(agumon)
+agumon.agregar_evolucion(greymon)
+greymon.agregar_evolucion(metalgreymon)
+greymon.agregar_evolucion(aero_v_dramon)
+"""
